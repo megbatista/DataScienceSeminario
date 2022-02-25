@@ -21,7 +21,9 @@
    O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta instância e os dados armazenados anteriormente.
 
 ### II. Classes de Problemas com melhores resultados
-   
+   * Quando se tem dados devidamente rotulados. Por exemplo, se desejamos prever se alguém tem diabetes ou não, o rótulo final pode ser 1 ou 0. Não pode ser NaN ou -1.
+   * Problemas com dados são livres de ruído. Para o conjunto de dados de diabetes não se pode ter um nível de glicose como 0 ou 10.000.
+   * Conjunto de dados pequeno.
 
 ### III. Definição Teórica e Modelagem Matemática
    A abordagem de KNN é relativamente simples e completamente não paramétrica. Dado um ponto x0 que desejamos classificar em um dos K grupos, encontramos os k pontos de dados observados mais próximos de x0. A regra de classificação é atribuir x0 à população que possui os pontos de dados mais observados dos k vizinhos mais próximos. Os pontos para os quais não há maioria são classificados aleatoriamente para uma das populações majoritárias ou deixados sem classificação.
@@ -56,7 +58,7 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
       - Como a métrica utilizada pelo, é o cálculo da distância entre pontos, exige uma verificação antes dos dados serem processados, pois as variáveis categóricas precisam ser tansformadas.
 
 ### V. Exemplo de uma aplicação em Python
-
+   
 
 ## Naive Bayes Classifiers
 
