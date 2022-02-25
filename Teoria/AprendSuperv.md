@@ -8,9 +8,12 @@ I. Conceito (O que é? Pra que serve?)
   * Marketing - para segmentação de clientes
   
   A classificação é feita a partir do cálculo da distância dos vizinhos mais próximos de cada ponto: a um ponto de consulta é atribuída a classe de dados que tem mais representantes dentro dos vizinhos mais próximos do ponto.
+  Observando o gráfico abaixo, em que o eixo y representa a altura e o eixo x, a idade, identifica-se 3 tipos de grupos de pessoas, em verde, laranja e azul. O ponto preto é o ponto a ser classificado, intuitivamente pode-se inferir que o esse ponto pertence ao grupo laranja, pois está mais próximo desse conjunto de pontos, portanto, as outras características desse dado deve ser semelhante aos desses outros pontos.
   
-  ![image](https://user-images.githubusercontent.com/77736052/155664748-e7d18659-53e0-4589-a247-49bc1821868b.png)
+![image](https://user-images.githubusercontent.com/77736052/155667298-44c80cfa-1f24-4dbf-b472-b4fe2dea400e.png)
 
+O algoritmo prevê, por meio de comparação entre as instâncias, valores de quaisquer novos pontos de dados. O novo ponto recebe um valor baseado em quão próximo ele se parece dos pontos no conjunto de treinamento. 
+O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta e os dados armazenados anteriormente.
 
 II. Classes de Problemas com melhores resultados
 
