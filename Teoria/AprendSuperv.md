@@ -9,6 +9,8 @@ I. Conceito (O que é? Pra que serve?)
   
   A classificação é feita a partir do cálculo da distância dos vizinhos mais próximos de cada ponto: a um ponto de consulta é atribuída a classe de dados que tem mais representantes dentro dos vizinhos mais próximos do ponto.
   
+  ![image](https://user-images.githubusercontent.com/77736052/155664748-e7d18659-53e0-4589-a247-49bc1821868b.png)
+
 
 II. Classes de Problemas com melhores resultados
 
