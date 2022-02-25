@@ -2,7 +2,7 @@
 
 ## K-Nearest Neighbors e Linear Models
 
-I. Conceito (O que é? Pra que serve?)
+### I. Conceito
 
    K-Nearest Neighbors (KNN), é um dos algoritmos de machine learning mais fáceis de se aprender, pode ser usado para classificação e regressão, sendo a técnica mais usada em problemas de classificação. É utilizado em agumas áreas como:
   * Microbiologia - para classificação de células
@@ -17,13 +17,27 @@ I. Conceito (O que é? Pra que serve?)
    O algoritmo prevê, por meio de comparação entre as instâncias, valores de quaisquer novos pontos de dados. O novo ponto recebe um valor baseado em quão próximo ele se parece dos pontos no conjunto de treinamento. 
    O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta instância e os dados armazenados anteriormente.
 
-II. Classes de Problemas com melhores resultados
-
-III. Definição Teórica e Modelagem Matemática
+### II. Classes de Problemas com melhores resultados
 
 
+### III. Definição Teórica e Modelagem Matemática
+   A abordagem de KNN é relativamente simples e completamente não paramétrica. Dado um ponto x0 que desejamos classificar em um dos K grupos, encontramos os k pontos de dados observados mais próximos de x0. A regra de classificação é atribuir x0 à população que possui os pontos de dados mais observados dos k vizinhos mais próximos. Os pontos para os quais não há maioria são classificados aleatoriamente para uma das populações majoritárias ou deixados sem classificação.
+   
+Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o ponto de treinamento são:
+   -  Euclidiano
+      A distância é calculada como a raiz quadrada da soma das diferenças quadráticas entre um novo ponto (x) e um ponto existente (y).
+      Se p e q são pontos de R^n, a distância euclidiana de p a q é o número
+      ![image](https://user-images.githubusercontent.com/77736052/155674750-193b977a-295b-4ee9-84e3-1e7fab85624a.png)
+      ![image](https://user-images.githubusercontent.com/77736052/155674916-ab91910b-a3fd-4bf5-bf0d-c4718bd7a7b6.png)
 
-IV. Vantagens e Desvantagens (limitações)
+
+   - Manhattan (para contínuo) 
+   - Distância Hamming (para categórico).
+
+Distância euclidiana: A distância euclidiana é calculada como a raiz quadrada da soma das diferenças quadráticas entre um novo ponto (x) e um ponto existente (y).
+Manhattan Distance : Esta é a distância entre vetores reais usando a soma de sua diferença absoluta.
+
+### IV. Vantagens e Desvantagens
    * Vantagens
       - Simples, fácil de implementar.
       - Não há necessidade de construir um modelo, ajustar vários parâmetros ou fazer suposições adicionais
@@ -34,9 +48,9 @@ IV. Vantagens e Desvantagens (limitações)
       - Definir um valor para K é normalmente uma tarefa manual, experimental e não trivial.
       - Como a métrica utilizada pelo, é o cálculo da distância entre pontos, exige uma verificação antes dos dados serem processados, pois as variáveis categóricas precisam ser tansformadas.
 
-V. Exemplo de uma aplicação em Python
+### V. Exemplo de uma aplicação em Python
 
-B
+
 ## Naive Bayes Classifiers
 
 O classificador Naive Bayes é um simples algoritmo de classificação realiza predições em aprendizagem de máquina. O termo “naive” (ingênuo) diz respeito à forma como o algoritmo analisa as características de uma base de dados: ele assume que as features são independentes entre si. 
