@@ -3,7 +3,7 @@
 ## K-Nearest Neighbors e Linear Models
 
 I. Conceito (O que é? Pra que serve?)
-
+  
 Pode ser usado para problemas de classificação e regressão, porém é mais usado em problemas de classificação
 é utilizado em agumas áareas como:
 Microbiologia - para classificação de células
