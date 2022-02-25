@@ -4,9 +4,12 @@
 
 ### I. Conceito
 
-   K-Nearest Neighbors (KNN), é um dos algoritmos de machine learning mais fáceis de se aprender, pode ser usado para classificação e regressão, sendo a técnica mais usada em problemas de classificação. É utilizado em agumas áreas como:
+   K-Nearest Neighbors (KNN), é um dos algoritmos de machine learning mais fáceis de se aprender, pode ser usado para classificação e regressão, sendo a técnica mais usada em problemas de classificação. É utilizado em áreas como:
   * Microbiologia - para classificação de células
   * Marketing - para segmentação de clientes
+  * Reconhecimento Facial
+  * Mineração de texto
+  * Sistemas de recomendação
   
   A classificação é feita a partir do cálculo da distância dos vizinhos mais próximos de cada ponto: a um ponto de consulta é atribuída a classe de dados que tem mais representantes dentro dos vizinhos mais próximos do ponto.
   Observando o gráfico abaixo, em que o eixo y representa a altura e o eixo x, a idade, identifica-se 3 tipos de grupos de pessoas, em verde, laranja e azul. O ponto preto é o ponto a ser classificado, intuitivamente pode-se inferir que o esse ponto pertence ao grupo laranja, pois está mais próximo desse conjunto, portanto, as demais características desse dado devem ser semelhantes aos destes outros pontos.
@@ -18,7 +21,7 @@
    O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta instância e os dados armazenados anteriormente.
 
 ### II. Classes de Problemas com melhores resultados
-
+   
 
 ### III. Definição Teórica e Modelagem Matemática
    A abordagem de KNN é relativamente simples e completamente não paramétrica. Dado um ponto x0 que desejamos classificar em um dos K grupos, encontramos os k pontos de dados observados mais próximos de x0. A regra de classificação é atribuir x0 à população que possui os pontos de dados mais observados dos k vizinhos mais próximos. Os pontos para os quais não há maioria são classificados aleatoriamente para uma das populações majoritárias ou deixados sem classificação.
@@ -27,15 +30,19 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
    -  Euclidiano
       A distância é calculada como a raiz quadrada da soma das diferenças quadráticas entre um novo ponto (x) e um ponto existente (y).
       Se p e q são pontos de R^n, a distância euclidiana de p a q é o número
+      
       ![image](https://user-images.githubusercontent.com/77736052/155674750-193b977a-295b-4ee9-84e3-1e7fab85624a.png)
+      
       ![image](https://user-images.githubusercontent.com/77736052/155674916-ab91910b-a3fd-4bf5-bf0d-c4718bd7a7b6.png)
 
-
    - Manhattan (para contínuo) 
-   - Distância Hamming (para categórico).
+       Distância entre vetores reais usando a soma de sua diferença absoluta.
+       
+      ![image](https://user-images.githubusercontent.com/77736052/155675642-31d1a5f1-ed0f-48af-8824-32c30529d1fe.png)
 
-Distância euclidiana: A distância euclidiana é calculada como a raiz quadrada da soma das diferenças quadráticas entre um novo ponto (x) e um ponto existente (y).
-Manhattan Distance : Esta é a distância entre vetores reais usando a soma de sua diferença absoluta.
+   - Distância Hamming
+      É usada quando se tem variáveis categóricas. Se o valor (x) e o valor (y) forem iguais, a distância D será igual a 0. Caso contrário, D = 1.
+         ![image](https://user-images.githubusercontent.com/77736052/155675824-7cacb7ea-1c76-4723-af5e-5b71dd598fe1.png)
 
 ### IV. Vantagens e Desvantagens
    * Vantagens
