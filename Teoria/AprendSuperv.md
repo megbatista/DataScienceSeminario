@@ -11,7 +11,7 @@ I. Conceito (O que é? Pra que serve?)
   A classificação é feita a partir do cálculo da distância dos vizinhos mais próximos de cada ponto: a um ponto de consulta é atribuída a classe de dados que tem mais representantes dentro dos vizinhos mais próximos do ponto.
   Observando o gráfico abaixo, em que o eixo y representa a altura e o eixo x, a idade, identifica-se 3 tipos de grupos de pessoas, em verde, laranja e azul. O ponto preto é o ponto a ser classificado, intuitivamente pode-se inferir que o esse ponto pertence ao grupo laranja, pois está mais próximo desse conjunto de pontos, portanto, as outras características desse dado deve ser semelhante aos desses outros pontos.
   
-![image](https://user-images.githubusercontent.com/77736052/155669417-2f3181d8-8fb8-49e7-9bb7-d45f4fbdf01c.png)
+![image](https://user-images.githubusercontent.com/77736052/155669688-fee42120-6475-4ae5-925c-a25759c2e0cc.png)
 ![image](https://user-images.githubusercontent.com/77736052/155669627-9e8ea38d-9758-4bfd-ba3d-7cf452434b33.png)
 
    O algoritmo prevê, por meio de comparação entre as instâncias, valores de quaisquer novos pontos de dados. O novo ponto recebe um valor baseado em quão próximo ele se parece dos pontos no conjunto de treinamento. 
