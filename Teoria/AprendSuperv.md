@@ -15,14 +15,24 @@ I. Conceito (O que é? Pra que serve?)
 ![image](https://user-images.githubusercontent.com/77736052/155669627-9e8ea38d-9758-4bfd-ba3d-7cf452434b33.png)
 
    O algoritmo prevê, por meio de comparação entre as instâncias, valores de quaisquer novos pontos de dados. O novo ponto recebe um valor baseado em quão próximo ele se parece dos pontos no conjunto de treinamento. 
-   O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta e os dados armazenados anteriormente.
-
+   O KNN utiliza aprendizagem baseada em instâncias, ou seja, não existe um modelo, regra ou função construído a partir de uma etapa de treinamento. Esse método, armazena todos os dados de treinamento, e a cada nova instância que se queira classificar, são realizados cálculos entre esta instância e os dados armazenados anteriormente.
 
 II. Classes de Problemas com melhores resultados
 
 III. Definição Teórica e Modelagem Matemática
 
+
+
 IV. Vantagens e Desvantagens (limitações)
+   * Vantagens
+      - Simples, fácil de implementar.
+      - Não há necessidade de construir um modelo, ajustar vários parâmetros ou fazer suposições adicionais
+      - Possui um bom desempenho quando os dados apresentam relacionamentos entre características complexos.
+      - Pode ser usado para classificação, regressão e pesquisa.
+   * Desvantagens
+      - A principal desvantagem do KNN é se tornar significativamente mais lento à medida que o volume de dados aumenta, o que o torna impraticável em cenários onde as previsões precisam ser feitas rapidamente. Além disso, existem algoritmos mais rápidos que podem produzir resultados de classificação e regressão mais precisos.
+      - Definir um valor para K é normalmente uma tarefa manual, experimental e não trivial.
+      - Como a métrica utilizada pelo, é o cálculo da distância entre pontos, exige uma verificação antes dos dados serem processados, pois as variáveis categóricas precisam ser tansformadas.
 
 V. Exemplo de uma aplicação em Python
 
