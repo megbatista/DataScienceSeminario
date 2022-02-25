@@ -3,13 +3,12 @@
 ## K-Nearest Neighbors e Linear Models
 
 I. Conceito (O que é? Pra que serve?)
+   K-Nearest Neighbors (KNN), é um dos algoritmos de machine learning mais fáceis de se aprender, pode ser usado para classificação e regressão, sendo a técnica mais usada em problemas de classificação. É utilizado em agumas áreas como:
+  * Microbiologia - para classificação de células
+  * Marketing - para segmentação de clientes
   
-Pode ser usado para problemas de classificação e regressão, porém é mais usado em problemas de classificação
-é utilizado em agumas áareas como:
-Microbiologia - para classificação de células
-Marketing - para segmentação de clientes
-
-
+  A classificação é feita a partir do cálculo da distância dos vizinhos mais próximos de cada ponto: a um ponto de consulta é atribuída a classe de dados que tem mais representantes dentro dos vizinhos mais próximos do ponto.
+  
 
 II. Classes de Problemas com melhores resultados
 
