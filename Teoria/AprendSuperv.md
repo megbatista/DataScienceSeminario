@@ -74,8 +74,12 @@ O funcionamento do algoritmo pode ser facilmente descrito em termos estatístico
 
 ### II. Classes de Problemas com melhores resultados
 
-A utilização do Naive Bayes é muito eficiente em categorização de texto, filtragem de SPAM e análise de sentimento em redes sociais.
+Naive Bayes deve ser utilizado quando:
+* Há disponibilidade de um conjunto de treinamento grande ou moderado.
+* Os atributos que descrevem as instâncias forem condicionalmente independentes dada a classe.
 
+A utilização do Naive Bayes é muito eficiente em categorização de texto, filtragem de SPAM e análise de sentimento em redes sociais.
+Possui aplicações bem sucedidas em diagnóstico médico.
 Além disso, o algoritmo é muito robusto para previsões em tempo real, ainda mais por precisar de poucos dados para realizar a classificação. Entretanto, caso haja necessidade de correlacionar fatores, o Naive Bayes tende a falhar na predição.
 
 ### III. Definição Teórica e Modelagem Matemática
@@ -100,7 +104,25 @@ P(A|B) reflete a influência do vetor de treinamento B, enquanto que a probabili
 
 Geralmente queremos encontrar a classe mais provável A, sendo fornecidos os exemplos de treinamento B.
 
+O classificador Naive Bayes é baseado na suposição de que os valores dos atributos são condicionalmente independentes dado o valor alvo. A probabilidade de observar a conjunção de atributos a1, a2,..., an é somente o produto das probabilidades para os atributos individuais:
+![image](https://user-images.githubusercontent.com/77736052/156113756-af390b5c-5591-4ecb-8529-c88543a13f30.png)
+
+Portanto, o classificador pode ser definido como:
+![image](https://user-images.githubusercontent.com/77736052/156113858-c03b90a2-f5ed-4771-abd6-328a0190e423.png)
+CNB indica o valor alvo fornecido pelo algoritmo.
+Os termos P(cj) e P(ai|cj) são estimados baseados nas suas frequências no conjunto de treinamento, estas probabilidades “aprendidas” são utilizadas para classificar uma nova instância aplicando a equação anterior (CNB).
+
 ### IV. Vantagens e Desvantagens
+
+ * Vantagens
+      - Simples, fácil de implementar.
+      - Não requer uma grande quantidade de dados de treinamento.
+      - Pode lidar com dados discretos e contínuos.
+      - É rápido e pode ser usado para fazer predições reais.
+      - É mais adequado para variáveis de entrada categóricas do que para variáveis numéricas.
+   * Desvantagens
+      - 
+      - Assume que todos os preditores são independentes, o que raramente acontece na vida real, limitando a aplicabilidade desse algoritmo em casos de uso do mundo real.
 
 ### V. Exemplo de uma aplicação em Python
 
