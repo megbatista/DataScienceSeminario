@@ -62,14 +62,12 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
 
 ## Naive Bayes Classifiers
 
-O classificador Naive Bayes é um simples algoritmo de classificação realiza predições em aprendizagem de máquina. O termo “naive” (ingênuo) diz respeito à forma como o algoritmo analisa as características de uma base de dados: ele assume que as features são independentes entre si. 
+O classificador Naive Bayes é um simples algoritmo de classificação realiza predições em aprendizagem de máquina. O termo “naive” (ingênuo) diz respeito à forma como o algoritmo analisa as características de uma base de dados, desconsiderando as correlações entre as features. 
 
-Além disso, ele também assume que as variáveis features são todas igualmente importantes para o resultado. Em cenários em que isso não ocorre, essa técnica deixa de ser a opção ideal. Discutiremos adiante sobre as aplicações.
-
-Como Bayes é um nome famoso na estatística, é fácil concluir que o seu algoritmo tem uma forte base dessa área, reforçando a relação entre estatística e inteligência artificial.
+O teorema de Bayes trata sobre probabilidade condicional, que é a probabilidade de o evento A ocorrer, dado o evento B. Ele também assume que as variáveis features são igualmente importantes para o resultado.
 
 Inclusive, o seu funcionamento pode ser facilmente descrito em termos estatísticos: para calcular a predição, o algoritmo define, primeiramente, uma tabela de probabilidades, em que consta a frequência dos preditores com relação às variáveis de saída. Então, o cálculo final leva em conta a probabilidade maior para oferecer uma solução.
-, se provou muito eficiente em categorização de texto
+Muito eficiente em categorização de texto
 
 Utiliza o teorema de Bayes com "naive", supondo a condição de independência entre cada par de características dado o valor da classe da variável.
 
