@@ -62,14 +62,45 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
 
 ## Naive Bayes Classifiers
 
+### I. Conceito
+
 O classificador Naive Bayes é um simples algoritmo de classificação realiza predições em aprendizagem de máquina. O termo “naive” (ingênuo) diz respeito à forma como o algoritmo analisa as características de uma base de dados, desconsiderando as correlações entre as features. 
 
 O teorema de Bayes trata sobre probabilidade condicional, que é a probabilidade de o evento A ocorrer, dado o evento B. Ele também assume que as variáveis features são igualmente importantes para o resultado.
 
-Inclusive, o seu funcionamento pode ser facilmente descrito em termos estatísticos: para calcular a predição, o algoritmo define, primeiramente, uma tabela de probabilidades, em que consta a frequência dos preditores com relação às variáveis de saída. Então, o cálculo final leva em conta a probabilidade maior para oferecer uma solução.
-Muito eficiente em categorização de texto
+O funcionamento do algoritmo pode ser facilmente descrito em termos estatísticos: para calcular a predição, define-se primeiramente, uma tabela de probabilidades, em que consta a frequência dos preditores com relação às variáveis de saída. Assim, o resultado é calculado a partir da maior probabilidade para oferecer uma solução.
 
-Utiliza o teorema de Bayes com "naive", supondo a condição de independência entre cada par de características dado o valor da classe da variável.
 
-Dados a classe de variáveis *y* e o vetor de características dependentes *x1* até *xn*, o teorema de Bayes afirma que:
-![image](https://user-images.githubusercontent.com/77736052/155605749-3f3fc0c8-3b4d-4d88-9a6d-1a9307dd99f8.png)
+
+### II. Classes de Problemas com melhores resultados
+
+A utilização do Naive Bayes é muito eficiente em categorização de texto, filtragem de SPAM e análise de sentimento em redes sociais.
+
+Além disso, o algoritmo é muito robusto para previsões em tempo real, ainda mais por precisar de poucos dados para realizar a classificação. Entretanto, caso haja necessidade de correlacionar fatores, o Naive Bayes tende a falhar na predição.
+
+### III. Definição Teórica e Modelagem Matemática
+
+Utiliza o Teorema de Bayes com "naive", supondo a condição de independência entre cada par de características dado o valor da classe da variável.
+
+![image](https://user-images.githubusercontent.com/77736052/156110924-21e217dc-7c08-40a4-975e-806df1bb7e9c.png)
+
+Onde:
+
+P(A|B): probabilidade da classe A dado o vetor B
+
+P(B|A): probabilidade do vetor B dada a classe A, também chamado de probabilidade condicional
+
+P(A): probabilidade a priori da classe A
+
+P(B): probabilidade a priori do vetor de treinamento B
+
+P(A|B) é chamada de probabilidade a posteriori de A porque ela reflete nossa confiança que A se mantenha após termos observado o vetor de treinamento B.
+
+P(A|B) reflete a influência do vetor de treinamento B, enquanto que a probabilidade a priori P(A) é independente de B.
+
+Geralmente queremos encontrar a classe mais provável A, sendo fornecidos os exemplos de treinamento B.
+
+### IV. Vantagens e Desvantagens
+
+### V. Exemplo de uma aplicação em Python
+
