@@ -105,10 +105,13 @@ P(A|B) reflete a influência do vetor de treinamento B, enquanto que a probabili
 Geralmente queremos encontrar a classe mais provável A, sendo fornecidos os exemplos de treinamento B.
 
 O classificador Naive Bayes é baseado na suposição de que os valores dos atributos são condicionalmente independentes dado o valor alvo. A probabilidade de observar a conjunção de atributos a1, a2,..., an é somente o produto das probabilidades para os atributos individuais:
+
 ![image](https://user-images.githubusercontent.com/77736052/156113756-af390b5c-5591-4ecb-8529-c88543a13f30.png)
 
 Portanto, o classificador pode ser definido como:
+
 ![image](https://user-images.githubusercontent.com/77736052/156113858-c03b90a2-f5ed-4771-abd6-328a0190e423.png)
+
 CNB indica o valor alvo fornecido pelo algoritmo.
 Os termos P(cj) e P(ai|cj) são estimados baseados nas suas frequências no conjunto de treinamento, estas probabilidades “aprendidas” são utilizadas para classificar uma nova instância aplicando a equação anterior (CNB).
 
@@ -120,9 +123,10 @@ Os termos P(cj) e P(ai|cj) são estimados baseados nas suas frequências no conj
       - Pode lidar com dados discretos e contínuos.
       - É rápido e pode ser usado para fazer predições reais.
       - É mais adequado para variáveis de entrada categóricas do que para variáveis numéricas.
-   * Desvantagens
-      - 
-      - Assume que todos os preditores são independentes, o que raramente acontece na vida real, limitando a aplicabilidade desse algoritmo em casos de uso do mundo real.
+ * Desvantagens
+      - Esse algoritmo enfrenta o 'problema de frequência zero', onde atribui probabilidade zero a uma variável categórica cuja categoria no conjunto de dados de teste não estava disponível no conjunto de dados de treinamento. Seria melhor se você usasse uma técnica de suavização para superar esse problema.
+      - Assume que todos os preditores são independentes, o que raramente acontece na vida real e acaba limitando a aplicabilidade desse algoritmo em casos de uso do mundo real.
+      - As estimativas podem estar erradas em alguns casos, portanto deve-se levar as saídas muito a sério.
 
 ### V. Exemplo de uma aplicação em Python
 
