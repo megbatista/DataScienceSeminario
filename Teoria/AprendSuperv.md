@@ -82,9 +82,7 @@ Além disso, o algoritmo é muito robusto para previsões em tempo real, ainda m
 
 Utiliza o Teorema de Bayes com "naive", supondo a condição de independência entre cada par de características dado o valor da classe da variável.
 
-![image](https://user-images.githubusercontent.com/77736052/156110924-21e217dc-7c08-40a4-975e-806df1bb7e9c.png)
-![image](https://user-images.githubusercontent.com/77736052/156112319-c609d480-9ebc-4451-b5a7-b34e41aa13b5.png)
-
+![image](https://user-images.githubusercontent.com/77736052/156112459-65a63587-7068-44d4-bccd-8715a89792e0.png)
 
 Onde:
 
