@@ -59,7 +59,7 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
 
 ### V. Exemplo de uma aplicação em Python
 
-   [Classificação](https://github.com/megbatista/DataScienceSeminario/blob/75d76d340fa4c2a6245c91dc33d039368a1dd0c1/Aplica%C3%A7%C3%B5esPython/KNN_plot_classification.ipynb)
+   [Classificação de pontos](https://github.com/megbatista/DataScienceSeminario/blob/75d76d340fa4c2a6245c91dc33d039368a1dd0c1/Aplica%C3%A7%C3%B5esPython/KNN_plot_classification.ipynb)
 
 ## Naive Bayes Classifiers
 
@@ -130,4 +130,18 @@ Os termos P(cj) e P(ai|cj) são estimados baseados nas suas frequências no conj
       - As estimativas podem estar erradas em alguns casos, portanto deve-se levar as saídas muito a sério.
 
 ### V. Exemplo de uma aplicação em Python
+[Naives Bayes usando conjunto de dados Iris](https://github.com/megbatista/DataScienceSeminario/blob/9fda802249bf5b6d244ef4867351e78b68976d0a/Aplica%C3%A7%C3%B5esPython/NaiveBayes.ipynb)
+
+## Decision Trees e Ensembles of Decision Trees
+
+### I. Conceito
+
+Decision Tree é um modelo muito poderoso que ajuda a classificar dados rotulados e a fazer previsões. Ele também esclarece com muitas informações sobre os dados e é fácil de interpretar. Uma árvore de decisão pode ser considerada um “classificador if-else aninhado”.
+
+Dos classificadores que se tem no mundo do aprendizado de máquina, a Árvore de decisão, é um dos classificadores que se assemelha muito ao raciocínio humano.
+É possível conceituar este algoritmo por meio de um exemplo, suponha que temos um conjunto de dados de 50 frutas, das quais poucas são limões e poucas são maçãs, e recebemos a cor da fruta e o tamanho da fruta como feature de entrada (portanto, esses são nossas 2 features independentes).
+A árvore de decisão para este problema poderia ser assim:
+
+![image](https://user-images.githubusercontent.com/77736052/156300017-04a496fc-ed7a-45a6-85fe-4a16c169402b.png)
+
 
