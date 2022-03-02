@@ -58,7 +58,8 @@ Os métodos mais utilizados para o cálculo da distância entre o novo ponto e o
       - Como a métrica utilizada pelo, é o cálculo da distância entre pontos, exige uma verificação antes dos dados serem processados, pois as variáveis categóricas precisam ser tansformadas.
 
 ### V. Exemplo de uma aplicação em Python
-   
+
+   [Classificação](https://github.com/megbatista/DataScienceSeminario/blob/75d76d340fa4c2a6245c91dc33d039368a1dd0c1/Aplica%C3%A7%C3%B5esPython/KNN_plot_classification.ipynb)
 
 ## Naive Bayes Classifiers
 
