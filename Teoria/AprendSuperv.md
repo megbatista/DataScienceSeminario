@@ -144,4 +144,13 @@ A árvore de decisão para este problema poderia ser assim:
 
 ![image](https://user-images.githubusercontent.com/77736052/156300017-04a496fc-ed7a-45a6-85fe-4a16c169402b.png)
 
+Algumas terminologias-chave para trabalhar com a Árvore de Decisão são:
+
+* NODE: Cada vez que faz-se uma pergunta ou quando se toma uma decisão, um NODE é representado.
+* ROOT: O nó mais alto da árvore (raiz) com o qual começa-se a questionar.
+* INTERIOR: Qualquer nó, exceto o nó ROOT, onde novamente faz-se uma pergunta.
+* LEAF: Quando se chega a um ponto em que não faz-se uma pergunta, mas toma-se uma decisão, chamamos de nó LEAF.
+
+Um exemplo geral da estrutura DT seria:
+![image](https://user-images.githubusercontent.com/77736052/156301266-9e244804-bab9-4745-8f85-e7f6aa7a0829.png)
 
