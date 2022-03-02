@@ -175,4 +175,18 @@ Decision Tree é um dos algoritmos básicos e amplamente utilizados nas áreas d
 
 ### III. Definição Teórica e Modelagem Matemática
 
+### IV. Vantagens e Desvantagens
+
+ * Vantagens
+      - Levam pouco tempo para processar os dados quando comparadas a outros algoritmos.
+      - Poucas etapas de pré-processamento, como normalização, transformação e dimensionamento dos dados, podem ser ignoradas.
+      - Embora existam valores ausentes no conjunto de dados, o desempenho do modelo não será afetado.
+      - É intuitivo e fácil de explicar para as equipes técnicas e partes interessadas, e pode ser implementado em várias organizações.
+ * Desvantagens
+      - Pequenas mudanças nos dados podem causar uma grande mudança na estrutura da árvore de decisão que, por sua vez, leva à instabilidade.
+      - O tempo de treinamento aumenta drasticamente, proporcional ao tamanho do conjunto de dados.
+      - Em alguns casos, os cálculos podem se tornar complexos em comparação com os outros algoritmos tradicionais.
+
+### V. Exemplo de uma aplicação em Python
+[Decision Trees](https://github.com/megbatista/DataScienceSeminario/blob/9fda802249bf5b6d244ef4867351e78b68976d0a/Aplica%C3%A7%C3%B5esPython/NaiveBayes.ipynb)
 
