@@ -152,5 +152,27 @@ Algumas terminologias-chave para trabalhar com a Árvore de Decisão são:
 * LEAF: Quando se chega a um ponto em que não faz-se uma pergunta, mas toma-se uma decisão, chamamos de nó LEAF.
 
 Um exemplo geral da estrutura DT seria:
+
 ![image](https://user-images.githubusercontent.com/77736052/156301266-9e244804-bab9-4745-8f85-e7f6aa7a0829.png)
+
+Existem algumas suposições que precisam ser consideradas antes de criar a árvore:
+
+* No início, todos os dados são considerados como a raiz, depois, usamos os algoritmos para fazer uma divisão ou dividir a raiz em subárvores.
+* Os valores das features são considerados categóricos. Se os valores forem contínuos, eles serão separados antes da construção do modelo.
+* Os registros são distribuídos recursivamente com base nos valores dos atributos.
+* A ordenação dos atributos como raiz ou nó interno da árvore é feita por meio de uma abordagem estatística.
+
+### II. Classes de Problemas com melhores resultados
+
+Decision Tree é um dos algoritmos básicos e amplamente utilizados nas áreas de Aprendizado de Máquina. É usado em diferentes áreas na modelagem de classificação e regressão. Devido à sua capacidade de representar a saída visualizada, pode-se facilmente extrair insights do fluxo do processo de modelagem. Alguns exemplos em que a Árvore de Decisão pode ser usada são:
+
+* Gestão de negócios
+* Gestão de Relacionamento com o Cliente
+* Detecção de declaração fraudulenta
+* Consumo de energia
+* Gestão de Saúde
+* Diagnóstico de falhas
+
+### III. Definição Teórica e Modelagem Matemática
+
 
